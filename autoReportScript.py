@@ -2,9 +2,8 @@ import pyautogui
 import keyboard
 import time
 
-while True:
-    if keyboard.is_pressed('k'):
-        for _ in range(10):
+def autoReport():
+    for _ in range(10):
             pyautogui.click()
             x0, y0 = pyautogui.position()
 
@@ -21,3 +20,11 @@ while True:
             
             pyautogui.moveTo(x0, y0)
             time.sleep(0.1)
+
+while True:
+    if keyboard.is_pressed('k'):
+        autoReport()
+    elif keyboard.is_pressed('l'):
+        break
+    else:
+         continue

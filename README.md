@@ -1,6 +1,7 @@
 # CS2 Scripts
 
 This repository contains two Python scripts for automating actions in Counter-Strike 2 using the `pyautogui` and `keyboard` libraries.
+Working with 4:3 resolution
 
 ## Contents
 
